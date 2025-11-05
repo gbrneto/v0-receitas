@@ -8,7 +8,10 @@ import { useEffect, useRef, useState } from "react"
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      "vturb-smartplayer": React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & { id: string }, HTMLElement>
+      "vturb-smartplayer": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & { id: string; muted?: string },
+        HTMLElement
+      >
     }
   }
 }
@@ -21,6 +24,15 @@ export function TestimonialVideoSection() {
       "https://scripts.converteai.net/33c48ae5-11f3-4040-b011-a6b5ad090b61/players/690b8d436489e82b7da1194c/v4/player.js"
     script.async = true
     document.head.appendChild(script)
+
+    script.onload = () => {
+      setTimeout(() => {
+        const player = document.querySelector("#vid-690b8d436489e82b7da1194c") as any
+        if (player && player.player) {
+          player.player.muted = true
+        }
+      }, 1000)
+    }
 
     return () => {
       // Cleanup script on unmount
@@ -61,6 +73,7 @@ export function TestimonialVideoSection() {
         <div className="bg-[#F5E6D3] rounded-lg p-8 md:p-12 shadow-lg">
           <vturb-smartplayer
             id="vid-690b8d436489e82b7da1194c"
+            muted="true"
             style={{ display: "block", margin: "0 auto", width: "100%" }}
           />
         </div>

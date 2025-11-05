@@ -8,9 +8,10 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "200 Recetas Sin Gluten - Chef Teresa Oliveira",
+  description:
+    "Libro digital con 200 recetas de panes sin gluten. Aprende a hacer pan dulce, pizzas, arepas, tortillas y mucho más con la Chef Teresa Oliveira.",
+  generator: "receitas.beversia.com",
 }
 
 export default function RootLayout({
