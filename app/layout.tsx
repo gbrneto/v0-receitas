@@ -37,6 +37,16 @@ export default function RootLayout({
           href="https://cdn.converteai.net/33c48ae5-11f3-4040-b011-a6b5ad090b61/690b36e177d4604252a031fc/main.m3u8"
           as="fetch"
         />
+        <link
+          rel="preload"
+          href="https://scripts.converteai.net/33c48ae5-11f3-4040-b011-a6b5ad090b61/players/690b8d436489e82b7da1194c/v4/player.js"
+          as="script"
+        />
+        <link
+          rel="preload"
+          href="https://cdn.converteai.net/33c48ae5-11f3-4040-b011-a6b5ad090b61/690b8d3f22ce52d5d4b17668/main.m3u8"
+          as="fetch"
+        />
         <link rel="dns-prefetch" href="https://cdn.converteai.net" />
         <link rel="dns-prefetch" href="https://scripts.converteai.net" />
         <link rel="dns-prefetch" href="https://images.converteai.net" />
