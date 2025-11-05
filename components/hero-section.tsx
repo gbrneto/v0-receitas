@@ -69,15 +69,69 @@ export function HeroSection() {
       </section>
 
       <div className="relative w-full overflow-hidden leading-[0] -mt-1">
-        <svg
-          className="relative block w-full h-[80px] md:h-[120px]"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path d="M0,0 C150,80 350,80 600,50 C850,20 1050,20 1200,80 L1200,120 L0,120 Z" className="fill-[#d4a574]" />
-        </svg>
+        <div className="flex animate-wave-seamless">
+          <svg
+            className="relative block w-full h-[80px] md:h-[120px] flex-shrink-0"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#D4A574"
+              fillOpacity="1"
+              d="M0,224L26.7,213.3C53.3,203,107,181,160,192C213.3,203,267,245,320,229.3C373.3,213,427,139,480,117.3C533.3,96,587,128,640,165.3C693.3,203,747,245,800,240C853.3,235,907,181,960,181.3C1013.3,181,1067,235,1120,240C1173.3,245,1227,203,1280,181.3C1333.3,160,1387,160,1413,160L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+            />
+          </svg>
+          <svg
+            className="relative block w-full h-[80px] md:h-[120px] flex-shrink-0"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#D4A574"
+              fillOpacity="1"
+              d="M0,224L26.7,213.3C53.3,203,107,181,160,192C213.3,203,267,245,320,229.3C373.3,213,427,139,480,117.3C533.3,96,587,128,640,165.3C693.3,203,747,245,800,240C853.3,235,907,181,960,181.3C1013.3,181,1067,235,1120,240C1173.3,245,1227,203,1280,181.3C1333.3,160,1387,160,1413,160L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+            />
+          </svg>
+        </div>
       </div>
+
+      <style jsx>{`
+        @keyframes wave {
+          0% {
+            transform: translateX(0) translateZ(0) scaleY(1);
+          }
+          50% {
+            transform: translateX(-25%) translateZ(0) scaleY(0.95);
+          }
+          100% {
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+          }
+        }
+
+        .animate-wave {
+          animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        }
+
+        .animate-wave path {
+          transform-origin: center;
+        }
+
+        /* New seamless infinite loop animation with slower speed */
+        @keyframes wave-seamless {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-wave-seamless {
+          animation: wave-seamless 25s linear infinite;
+        }
+      `}</style>
     </>
   )
 }
