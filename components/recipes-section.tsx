@@ -126,7 +126,7 @@ export function RecipesSection() {
         {/* Chef with Book Image */}
         <div className="w-full max-w-md mb-8">
           <Image
-            src="https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/sem%20gluten/espanhol/libro3-1279x1536.png.webp"
+            src="/images/design-mode/libro3.webp"
             alt="Dra. Teresa González con el libro de pan sin gluten"
             width={1279}
             height={1536}
@@ -138,7 +138,7 @@ export function RecipesSection() {
         {/* +de 200 Pan Title Image */}
         <div className="w-full max-w-2xl mb-6">
           <Image
-            src="https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/sem%20gluten/espanhol/titulo-1-1024x225.png.webp"
+            src="/images/design-mode/titulo-1.webp"
             alt="+de 200 Pan por Jefa Teresa"
             width={1024}
             height={225}

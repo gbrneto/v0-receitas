@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex justify-center mb-8">
           <div className="relative w-[400px] h-[300px]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2ZxI1SJtfwed9FQYEgUvBPQi8O44sX.png"
+              src="/images/design-mode/image.png"
               alt="Cooking with Chef Teresa Logo"
               fill
               className="object-contain"

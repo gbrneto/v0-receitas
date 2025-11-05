@@ -6,8 +6,8 @@ export function AboutSection() {
       <div className="container mx-auto max-w-4xl">
         {/* Chef Image */}
         <div className="mb-8 flex justify-center">
-          <div className="relative h-[500px] w-full max-w-[450px] overflow-hidden rounded-lg shadow-2xl">
-            <Image src="/woman-chef-cooking-in-kitchen.jpg" alt="Jefa Teresa" fill className="object-cover" />
+          <div className="relative h-[500px] w-full max-w-[720px] overflow-hidden rounded-lg shadow-2xl">
+            <Image src="/images/design-mode/mulher-sorridente-de-tiro-medio-cortando-cebola_23-2149631686.avif" />
           </div>
         </div>
 

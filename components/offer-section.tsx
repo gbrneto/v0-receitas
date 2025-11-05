@@ -13,7 +13,7 @@ export function OfferSection() {
         {/* Book Image */}
         <div className="relative mb-6">
           <Image
-            src="/placeholder.svg?height=300&width=250"
+            src="/images/design-mode/MOCKUP-NOVO-1.webp"
             alt="Libro de Pan por la Jefa Teresa"
             width={250}
             height={300}
