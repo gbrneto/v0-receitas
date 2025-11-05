@@ -66,9 +66,12 @@ export function OfferSection() {
         </div>
 
         {/* CTA Button */}
-        <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors mb-4">
+        <a
+          href="https://pay.brightcarty.com/checkout-es-receitas"
+          className="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors mb-4 text-center"
+        >
           SI, LO QUIERO
-        </button>
+        </a>
 
         {/* Urgency Text */}
         <p className="text-center text-sm font-bold mb-6">**LA OFERTA VENCE HOY**</p>

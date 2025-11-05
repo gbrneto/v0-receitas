@@ -26,6 +26,22 @@ export default function RootLayout({
             __html: `!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '861866157007304');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
         <link
           rel="preload"
           href="https://scripts.converteai.net/33c48ae5-11f3-4040-b011-a6b5ad090b61/players/690b36e6d4bbf937f39fc463/v4/player.js"
@@ -53,6 +69,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
       </head>
       <body className={`font-sans antialiased`}>
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=861866157007304&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
         {children}
         <Analytics />
       </body>
