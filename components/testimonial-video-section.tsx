@@ -154,7 +154,7 @@ export function TestimonialVideoSection() {
             </div>
             <div className="aspect-square bg-gray-200">
               <img
-                src="/images/design-mode/fsafsads(1).png"
+                src="/images/design-mode/fsafsads(2).png"
                 alt="Alumna certificada 2"
                 className="w-full h-full object-cover"
               />
@@ -168,7 +168,7 @@ export function TestimonialVideoSection() {
             </div>
             <div className="aspect-square bg-gray-200">
               <img
-                src="/images/design-mode/fsafsads(1).png"
+                src="/images/design-mode/fsafsads(2).png"
                 alt="Alumna certificada 4"
                 className="w-full h-full object-cover"
               />
