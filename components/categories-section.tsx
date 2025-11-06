@@ -1,4 +1,13 @@
+"use client"
+
 export function CategoriesSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById("offer-section")
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   const categories = [
     {
       title: "Panes del Día a Día",
@@ -63,7 +72,10 @@ export function CategoriesSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-16">
-          <button className="bg-[#4A7C9E] hover:bg-[#3d6682] text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">
+          <button
+            onClick={scrollToOffer}
+            className="bg-[#4A7C9E] hover:bg-[#3d6682] text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
+          >
             QUIERO LAS RECETAS
           </button>
         </div>

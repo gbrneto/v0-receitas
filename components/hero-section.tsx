@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button"
 import { useEffect } from "react"
 
 export function HeroSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById("offer-section")
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   useEffect(() => {
     const script = document.createElement("script")
     script.src =
@@ -62,7 +69,10 @@ export function HeroSection() {
 
         {/* CTA Button */}
         <div className="w-full max-w-md">
-          <Button className="w-full bg-[#8b5a3c] hover:bg-[#6d4530] text-white text-lg md:text-xl font-bold py-6 md:py-7 rounded-full shadow-lg uppercase transition-colors">
+          <Button
+            onClick={scrollToOffer}
+            className="w-full bg-[#8b5a3c] hover:bg-[#6d4530] text-white text-lg md:text-xl font-bold py-6 md:py-7 rounded-full shadow-lg uppercase transition-colors"
+          >
             QUIERO EL LIBRO
           </Button>
         </div>

@@ -1,4 +1,13 @@
+"use client"
+
 export function BonusSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById("offer-section")
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   const bonusBooks = [
     {
       id: 1,
@@ -69,7 +78,11 @@ export function BonusSection() {
             +3 BONIFICACIÓN DE REGALOS SECRETOS
           </div>
           <div className="flex justify-center mb-4">
-            <img src="/golden-gift-box-with-question-marks.jpg" alt="Regalos Secretos" className="w-32 h-32 object-contain" />
+            <img
+              src="/golden-gift-box-with-question-marks.jpg"
+              alt="Regalos Secretos"
+              className="w-32 h-32 object-contain"
+            />
           </div>
           <div className="text-center">
             <span className="text-red-600 line-through font-semibold mr-2">$59.90</span>
@@ -81,7 +94,10 @@ export function BonusSection() {
 
         {/* CTA Button */}
         <div className="flex justify-center pt-6">
-          <button className="bg-[#4A7BA7] hover:bg-[#3A6B97] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors duration-300">
+          <button
+            onClick={scrollToOffer}
+            className="bg-[#4A7BA7] hover:bg-[#3A6B97] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors duration-300"
+          >
             QUIERO LOS LIBROS
           </button>
         </div>

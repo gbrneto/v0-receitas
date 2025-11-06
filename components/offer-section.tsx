@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function OfferSection() {
   return (
-    <section className="bg-white py-16 px-4">
+    <section id="offer-section" className="bg-white py-16 px-4">
       <div className="max-w-md mx-auto bg-[#f5e6d3] rounded-lg shadow-lg p-6">
         {/* Best Seller Badge */}
         <div className="bg-red-600 text-white text-center py-2 px-4 font-bold text-sm mb-6">MEJOR VENDIDO</div>

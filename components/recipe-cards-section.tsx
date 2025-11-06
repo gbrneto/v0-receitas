@@ -57,6 +57,13 @@ const recipes = [
 ]
 
 export function RecipeCardsSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById("offer-section")
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   const getRecipeImage = (index: number) => {
     const imageMap: { [key: number]: string } = {
       0: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/sem%20gluten/espanhol/fts3.6.webp",
@@ -112,6 +119,7 @@ export function RecipeCardsSection() {
         {/* CTA Button */}
         <div className="text-center mb-6">
           <Button
+            onClick={scrollToOffer}
             size="lg"
             className="bg-[#4A7C9C] hover:bg-[#3d6680] text-white font-bold px-12 py-6 text-lg rounded-full"
           >

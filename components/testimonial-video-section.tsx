@@ -17,6 +17,13 @@ declare global {
 }
 
 export function TestimonialVideoSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById("offer-section")
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   useEffect(() => {
     // Load VTurb player script
     const script = document.createElement("script")
@@ -80,7 +87,10 @@ export function TestimonialVideoSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-8">
-          <button className="bg-[#4A7BA7] hover:bg-[#3A6B97] text-white font-bold py-4 px-12 rounded-full text-lg transition-colors shadow-lg">
+          <button
+            onClick={scrollToOffer}
+            className="bg-[#4A7BA7] hover:bg-[#3A6B97] text-white font-bold py-4 px-12 rounded-full text-lg transition-colors shadow-lg"
+          >
             DESCARGAR MI CÓPIA
           </button>
         </div>
