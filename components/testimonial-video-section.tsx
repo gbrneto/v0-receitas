@@ -77,7 +77,7 @@ export function TestimonialVideoSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">MIRA LO QUE DICE QUIÉN COMPRÓ:</h2>
 
         {/* Video Container */}
-        <div className="bg-[#F5E6D3] rounded-lg p-8 md:p-12 shadow-lg">
+        <div className="bg-[#F5E6D3] rounded-lg p-8 md:p-12 shadow-lg hidden">
           <vturb-smartplayer
             id="vid-690b8d436489e82b7da1194c"
             muted="true"
