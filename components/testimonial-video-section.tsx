@@ -24,31 +24,6 @@ export function TestimonialVideoSection() {
     }
   }
 
-  useEffect(() => {
-    // Load VTurb player script
-    const script = document.createElement("script")
-    script.src =
-      "https://scripts.converteai.net/33c48ae5-11f3-4040-b011-a6b5ad090b61/players/690b8d436489e82b7da1194c/v4/player.js"
-    script.async = true
-    document.head.appendChild(script)
-
-    script.onload = () => {
-      setTimeout(() => {
-        const player = document.querySelector("#vid-690b8d436489e82b7da1194c") as any
-        if (player && player.player) {
-          player.player.muted = true
-        }
-      }, 1000)
-    }
-
-    return () => {
-      // Cleanup script on unmount
-      if (script.parentNode) {
-        script.parentNode.removeChild(script)
-      }
-    }
-  }, [])
-
   return (
     <section className="relative bg-[#B8704F] py-16 px-4">
       {/* Top Wave Divider */}
@@ -75,15 +50,6 @@ export function TestimonialVideoSection() {
       <div className="container mx-auto max-w-4xl relative z-10 mt-12">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">MIRA LO QUE DICE QUIÉN COMPRÓ:</h2>
-
-        {/* Video Container */}
-        <div className="bg-[#F5E6D3] rounded-lg p-8 md:p-12 shadow-lg hidden">
-          <vturb-smartplayer
-            id="vid-690b8d436489e82b7da1194c"
-            muted="true"
-            style={{ display: "block", margin: "0 auto", width: "100%" }}
-          />
-        </div>
 
         {/* CTA Button */}
         <div className="text-center mt-8">

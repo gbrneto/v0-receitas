@@ -67,7 +67,7 @@ export function OfferSection() {
 
         {/* CTA Button */}
         <a
-          href="https://pay.brightcarty.com/checkout-es-receitas"
+          href="https://pay.brightcarty.com/checkout-es-eur"
           className="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors mb-4 text-center"
         >
           SI, LO QUIERO
