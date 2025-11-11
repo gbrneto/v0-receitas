@@ -3,7 +3,7 @@
 import { Check, Star, GraduationCap, Shield } from "lucide-react"
 import Image from "next/image"
 
-export function OfferSection() {
+export function OfferSectionEs() {
   return (
     <section id="offer-section" className="bg-white py-16 px-4">
       <div className="max-w-md mx-auto bg-[#f5e6d3] rounded-lg shadow-lg p-6">
@@ -67,7 +67,7 @@ export function OfferSection() {
 
         {/* CTA Button */}
         <a
-          href="https://pay.brightcarty.com/checkout-es-receitas"
+          href="https://pay.brightcarty.com/checkout-es-eur"
           className="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors mb-4 text-center"
         >
           SI, LO QUIERO
