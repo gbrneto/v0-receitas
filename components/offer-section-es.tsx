@@ -54,14 +54,14 @@ export function OfferSectionEs() {
         {/* Pricing */}
         <div className="text-center mb-6">
           <div className="relative inline-block mb-2">
-            <span className="text-gray-600 text-lg">DE $ 99.90</span>
+            <span className="text-gray-600 text-lg">DE € 99,90</span>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-full h-0.5 bg-red-600 rotate-[-15deg]"></div>
             </div>
           </div>
           <div className="text-sm text-gray-700 mb-2">Por solo</div>
           <div className="text-green-600 text-6xl font-bold">
-            <sup className="text-3xl">$</sup>9,90
+            <sup className="text-3xl">€</sup>19,87
           </div>
         </div>
 
